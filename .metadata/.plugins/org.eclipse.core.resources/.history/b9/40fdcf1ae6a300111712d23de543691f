@@ -1,0 +1,20 @@
+package chess_game;
+
+import chess_game.square;
+
+public class piece {
+	
+	char visual;
+	
+	public piece() {
+		
+	}
+}
+
+
+
+
+
+
+
+

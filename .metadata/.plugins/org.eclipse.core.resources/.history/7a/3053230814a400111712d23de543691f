@@ -1,0 +1,88 @@
+package chess_game;
+
+import chess_game.*;
+import pieces.*;
+
+public class board {
+	
+	square [][] squares;
+	
+	boolean white = true;
+	boolean black = false;
+	
+	public board() {
+		squares= new square [8][8];
+		
+		for(int i=0;i<8;i++) {
+			for(int j=0;j<8;j++) {
+				squares[i][j]= new square(i,j);
+			}
+		}
+		
+		squares[0][0].setPiece(new rook(black));//00
+		squares[0][1].setPiece(new rook(black));//01
+		squares[0][2].setPiece(new rook(black));//02
+		squares[0][3].setPiece(new rook(black));//03
+		squares[0][4].setPiece(new rook(black));//04
+		squares[0][5].setPiece(new rook(black));//05
+		squares[0][6].setPiece(new rook(black));//06
+		squares[0][7].setPiece(new rook(black));//07
+		
+		squares[1][0].setPiece(new rook(black));//00
+		squares[1][1].setPiece(new rook(black));//01
+		squares[1][2].setPiece(new rook(black));//02
+		squares[1][3].setPiece(new rook(black));//03
+		squares[1][4].setPiece(new rook(black));//04
+		squares[1][5].setPiece(new rook(black));//05
+		squares[1][6].setPiece(new rook(black));//06
+		squares[1][7].setPiece(new rook(black));//07
+		
+		squares[6][0].setPiece(new rook(black));//00
+		squares[6][1].setPiece(new rook(black));//01
+		squares[6][2].setPiece(new rook(black));//02
+		squares[6][3].setPiece(new rook(black));//03
+		squares[6][4].setPiece(new rook(black));//04
+		squares[6][5].setPiece(new rook(black));//05
+		squares[6][6].setPiece(new rook(black));//06
+		squares[6][7].setPiece(new rook(black));//07
+		
+		squares[7][0].setPiece(new rook(black));//00
+		squares[7][1].setPiece(new rook(black));//01
+		squares[7][2].setPiece(new rook(black));//02
+		squares[7][3].setPiece(new rook(black));//03
+		squares[7][4].setPiece(new rook(black));//04
+		squares[7][5].setPiece(new rook(black));//05
+		squares[7][6].setPiece(new rook(black));//06
+		squares[7][7].setPiece(new rook(black));//07
+
+
+		
+		
+	}
+	
+	public void printBoard() {
+		for(int i=0;i<8;i++) {
+			for(int j=0;j<8;j++) {
+				if(j==7) {
+					System.out.println(squares[i][j].piece.getVisual());
+				}
+				else {
+					System.out.print(squares[i][j].piece.getVisual());
+
+				}
+			}
+		}
+	}
+	
+	public square getSquare(int x,int y) {
+		if(x<0 || x>7 || y<0 || y>7) {
+			return null;
+		}
+		return squares[x][y];
+	}
+	
+	public void setSquare(square square, int x, int y) {
+		squares[x][y]=square;
+	}
+	
+}

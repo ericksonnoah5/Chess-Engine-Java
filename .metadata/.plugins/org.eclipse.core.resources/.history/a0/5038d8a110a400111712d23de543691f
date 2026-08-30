@@ -1,0 +1,9 @@
+package pieces;
+
+public class knight extends piece{
+
+	
+	public knight() {
+		setVisual("[K]");
+	}
+}

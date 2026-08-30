@@ -1,0 +1,12 @@
+package chess_game;
+
+public class board {
+	
+	
+	
+	public board() {
+		square [][] squares= new square [8][8];
+		
+	}
+
+}

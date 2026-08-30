@@ -1,0 +1,125 @@
+package chess_game;
+
+import java.util.*;
+
+
+import chess_game.*;
+import pieces.*;
+
+public class main {
+
+	static Scanner scan;
+	
+	public static void main (String args [] ) {
+		
+		chess_game chessgame = new chess_game();
+		scan = new Scanner(System.in);
+		String piece;
+		String where;
+		
+		boolean whitesturn=true;
+		
+		boolean running=true;
+		while(running) {
+			
+			System.out.println("Commands q(uit) h(elp)");
+			System.out.println("");
+			if(whitesturn) {
+				System.out.println("Whites turn");
+			}
+			
+			else {
+				System.out.println("Blacks turn");
+			}
+
+			System.out.println("");
+
+			
+			chessgame.board.printBoard();
+			System.out.println("");
+
+	        System.out.print("Piece: ");
+	        piece = scan.nextLine();
+	        
+	        if(piece.equals("q")) {
+	        	running=false;
+	        }
+	        
+	        decode(piece);
+	        
+	        
+	        
+			System.out.println("");
+			
+	        System.out.print("Where: ");
+
+	        where = scan.nextLine();
+			System.out.println("");
+
+
+	        chess_game.clearTerminal();
+	       
+	        
+		}
+	}
+	
+	public static void decode(String piece) {
+		
+		String validNumbers="12345678";
+		String validChars="abcdefgh";
+		
+		
+		if(piece==null || piece=="" || piece.length()>2 ) {
+			System.out.println("try again example(e4)");
+
+			
+			System.out.print("Piece: ");
+	        piece = scan.nextLine();
+	        decode(piece);
+	        return;
+		}
+		
+		String first = piece.substring(0,1);
+		String secound = piece.substring(1,2);
+		
+		if(validChars.contains(first)) {
+			
+		}
+		else {
+			System.out.println("try again example(e4)");
+			System.out.print("Piece: ");
+	        piece = scan.nextLine();
+	        decode(piece);
+	        return;
+		}
+		
+		if(validNumbers.contains(secound)) {
+			
+		}
+		else {
+			System.out.println("try again example(e4)");
+			System.out.print("Piece: ");
+	        piece = scan.nextLine();
+	        decode(piece);
+	        return;
+		}
+		
+		int x;
+		int y;
+		
+		for(int i=0;i<8;i++) {
+			if(validChars.charAt(i)==first.charAt(0)) {
+				x=i;
+			}
+		}
+		for(int i=0;i<8;i++) {
+			if(validNumbers.charAt(i)==secound.charAt(0)) {
+				y=i;
+			}
+		}
+		
+		
+		
+		
+	}
+}

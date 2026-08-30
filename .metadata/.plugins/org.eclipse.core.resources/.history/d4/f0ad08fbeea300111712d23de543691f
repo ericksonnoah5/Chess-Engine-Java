@@ -1,0 +1,11 @@
+package chess_game;
+
+import chess_game.piece;
+
+public class player extends piece{
+	
+	public player() {
+		
+	}
+
+}

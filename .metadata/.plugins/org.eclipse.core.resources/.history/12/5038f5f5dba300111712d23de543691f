@@ -1,0 +1,10 @@
+package chess_game;
+
+public class chass_game {
+	
+	
+	public chess_game() {
+		
+	}
+
+}

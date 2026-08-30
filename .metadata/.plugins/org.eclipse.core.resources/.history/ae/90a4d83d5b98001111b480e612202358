@@ -1,0 +1,11 @@
+package terminal_game;
+
+public class main {
+
+	
+	
+	
+	public static void main (String args [] ) {
+		
+	}
+}

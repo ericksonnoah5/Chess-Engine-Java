@@ -1,0 +1,17 @@
+package terminal_game;
+
+public class node {
+	int val;
+	node next;
+	
+	node() {}
+	
+	node(int val){ 
+		this.val = val; 
+	}
+	
+	node(int val, node next){ 
+		this.val = val; this.next = next; 
+	}
+	
+}

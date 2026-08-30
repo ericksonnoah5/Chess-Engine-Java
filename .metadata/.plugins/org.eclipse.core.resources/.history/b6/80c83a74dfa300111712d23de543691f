@@ -1,0 +1,19 @@
+package chess_game;
+
+
+
+public class chess_game {
+	
+	player player1;
+	player player2;
+
+	board board;
+	
+	public chess_game() {
+		board = new board();
+		player1 = new player();
+		player2 = new player();
+
+	}
+
+}

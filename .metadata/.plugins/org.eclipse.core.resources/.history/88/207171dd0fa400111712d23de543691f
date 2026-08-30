@@ -1,0 +1,18 @@
+package pieces;
+
+import chess_game.piece;
+
+public class nopiece extends piece{
+	
+	String visualchar="[ ]";
+	
+	public nopiece() {
+		setVisual(visualchar);
+	}
+
+}
+
+
+
+
+

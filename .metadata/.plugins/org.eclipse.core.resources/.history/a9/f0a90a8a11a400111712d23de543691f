@@ -1,0 +1,12 @@
+package pieces;
+
+import chess_game.piece;
+public class pond extends piece{
+	
+	
+	
+	public pond() {
+		setVisual("P");
+	}
+
+}

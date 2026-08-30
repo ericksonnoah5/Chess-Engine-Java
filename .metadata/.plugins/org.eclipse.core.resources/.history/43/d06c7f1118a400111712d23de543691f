@@ -1,0 +1,72 @@
+package chess_game;
+
+import java.util.*;
+
+
+import chess_game.*;
+import pieces.*;
+
+public class main {
+
+	static Scanner scan;
+	
+	public static void main (String args [] ) {
+		
+		chess_game chessgame = new chess_game();
+		scan = new Scanner(System.in);
+		String piece;
+		String where;
+		
+		boolean whitesturn=true;
+		
+		
+		while(true) {
+			
+			System.out.println("Commands q(uit) h(elp)");
+			System.out.println("");
+			if(whitesturn) {
+				System.out.println("Whites turn");
+			}
+			
+			else {
+				System.out.println("Blacks turn");
+			}
+
+			System.out.println("");
+
+			
+			chessgame.board.printBoard();
+			System.out.println("");
+
+	        System.out.print("Piece: ");
+	        piece = scan.nextLine();
+	        
+	        decode(piece);
+	        
+	        
+	        
+			System.out.println("");
+			
+	        System.out.print("Where: ");
+
+	        where = scan.nextLine();
+			System.out.println("");
+
+
+	        chess_game.clearTerminal();
+	       
+	        
+		}
+	}
+	
+	public static void decode(String piece) {
+		if(piece==null || piece=="") {
+			System.out.print("Piece is null try again");
+
+			
+			System.out.print("Piece: ");
+	        piece = scan.nextLine();
+	        decode(piece);
+		}
+	}
+}

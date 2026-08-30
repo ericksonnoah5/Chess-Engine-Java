@@ -1,0 +1,13 @@
+package pieces;
+
+import chess_game.piece;
+
+public class player extends piece{
+	
+String visualchar="[@]";
+	
+	public player() {
+		setVisual(visualchar);
+	}
+
+}

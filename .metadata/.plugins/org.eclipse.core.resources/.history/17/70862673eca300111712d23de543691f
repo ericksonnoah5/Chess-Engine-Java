@@ -1,0 +1,31 @@
+package chess_game;
+
+import chess_game.*;
+import pieces.*;
+
+public class square {
+	
+	piece piece;
+	int x;
+	int y;
+	
+	
+	public square(int x,int y) {
+		
+		
+		
+				piece= new nopiece();
+				if(y==7) {
+					System.out.println(piece.visual);
+
+				}
+				else {
+					System.out.print(piece.visual);
+
+				}
+			
+		
+		
+	}
+
+}

@@ -1,0 +1,24 @@
+package chess_game;
+
+import java.util.*;
+
+import chess_game.*;
+
+public class main {
+
+	
+	public static void main (String args [] ) {
+		
+		chess_game chessgame = new chess_game();
+		Scanner input = new Scanner(System.in);
+		String userinput;
+		
+		board board = new board();
+		
+		while(true) {
+			board.printBoard();
+	        System.out.print("User input: ");
+	        userinput = input.nextLine();
+		}
+	}
+}

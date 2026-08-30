@@ -1,0 +1,14 @@
+package chess_game;
+
+
+
+public class chess_game {
+	
+	player player;
+	board board;
+	
+	public chess_game() {
+		board = new board();
+	}
+
+}

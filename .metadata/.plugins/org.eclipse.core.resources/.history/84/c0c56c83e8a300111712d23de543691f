@@ -1,0 +1,28 @@
+package chess_game;
+
+import chess_game.square;
+
+public class piece {
+	
+	char visual;
+	
+	public piece() {
+		
+	}
+	
+	public char getVisual() {
+		return visual;
+	}
+	public void setVisual(char visual) {
+		this.visual = visual;
+	}
+	
+}
+
+
+
+
+
+
+
+

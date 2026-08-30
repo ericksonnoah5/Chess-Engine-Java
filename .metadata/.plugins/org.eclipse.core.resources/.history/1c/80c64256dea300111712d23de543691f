@@ -1,0 +1,7 @@
+package chess_game;
+
+import chess_game.square;
+
+public class piece implements square{
+
+}

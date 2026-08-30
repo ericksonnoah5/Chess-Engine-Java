@@ -1,0 +1,29 @@
+package chess_game;
+
+import java.util.*;
+
+
+import chess_game.*;
+import pieces.*;
+
+public class main {
+
+	
+	public static void main (String args [] ) {
+		
+		chess_game chessgame = new chess_game();
+		Scanner input = new Scanner(System.in);
+		String userinput;
+		
+		
+		while(true) {
+			
+			chessgame.board.printBoard();
+	        System.out.print("Which Piece: ex(e4)");
+	        userinput = input.nextLine();
+	        chess_game.clearTerminal();
+	       
+	        
+		}
+	}
+}

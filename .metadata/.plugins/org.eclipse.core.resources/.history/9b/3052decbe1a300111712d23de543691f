@@ -1,0 +1,14 @@
+package chess_game;
+
+public class square {
+	
+	piece piece;
+	int x;
+	int y;
+	
+	
+	public square(int x,int y) {
+		
+	}
+
+}

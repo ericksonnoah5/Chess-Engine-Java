@@ -1,0 +1,28 @@
+package chess_game;
+
+
+public class chess_game {
+	
+	board board;
+	
+	public chess_game() {
+		board = new board();
+	}
+	
+	public board getBoard() {
+		return board;
+	}
+	
+	public void setBoard(board board) {
+		this.board=board;
+	}
+	
+	public static void clearTerminal() {
+		System.out.print("\033[H\033[2J");
+		System.out.flush();
+	}
+	
+}
+
+
+

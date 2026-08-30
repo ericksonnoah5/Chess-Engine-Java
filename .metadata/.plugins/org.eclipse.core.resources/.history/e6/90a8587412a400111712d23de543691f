@@ -1,0 +1,10 @@
+package pieces;
+
+import chess_game.*;
+public class knight extends piece{
+
+	
+	public knight() {
+		setVisual("[N]");
+	}
+}

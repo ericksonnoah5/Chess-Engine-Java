@@ -1,0 +1,42 @@
+package chess_game;
+
+import chess_game.*;
+
+
+public class board {
+	
+	square [][] squares;
+	
+	public board() {
+		squares= new square [8][8];
+		
+		for(int i=0;i<8;i++) {
+			for(int j=0;j<8;j++) {
+				squares[i][j]= new square(i,j);
+			}
+		}
+	}
+	
+	public void printBoard() {
+		for(int i=0;i<8;i++) {
+			for(int j=0;j<8;j++) {
+				if(j==7) {
+					System.out.println(squares[i][j].piece.getVisual());
+				}
+				else {
+					System.out.print(squares[i][j].piece.getVisual());
+
+				}
+			}
+		}
+	}
+	
+	public square getSquare(int x,int y) {
+		return squares[x][y];
+	}
+	
+	public void setSquare() {
+		
+	}
+	
+}

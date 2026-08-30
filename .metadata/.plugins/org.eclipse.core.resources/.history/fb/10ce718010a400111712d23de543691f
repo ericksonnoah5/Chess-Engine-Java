@@ -1,0 +1,10 @@
+package pieces;
+
+import chess_game.*;
+
+public class bishop extends piece{
+	
+	public bishop() {
+		setVisual();
+	}
+}

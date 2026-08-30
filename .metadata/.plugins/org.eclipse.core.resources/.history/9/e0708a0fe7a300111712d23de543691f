@@ -1,0 +1,24 @@
+package chess_game;
+
+import chess_game.*;
+import pieces.*;
+
+public class square {
+	
+	piece piece;
+	int x;
+	int y;
+	
+	
+	public square(int x,int y) {
+		
+		
+		for(int i=0;i<8;i++) {
+			for(int j=0;j<8;j++) {
+				piece= new king();
+			}
+		}
+		
+	}
+
+}

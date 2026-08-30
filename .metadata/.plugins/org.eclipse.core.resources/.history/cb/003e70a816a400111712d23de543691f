@@ -1,0 +1,41 @@
+package chess_game;
+
+import java.util.*;
+
+
+import chess_game.*;
+import pieces.*;
+
+public class main {
+
+	
+	public static void main (String args [] ) {
+		
+		chess_game chessgame = new chess_game();
+		Scanner scan = new Scanner(System.in);
+		String piece;
+		String where;
+		
+		
+		while(true) {
+			
+			System.out.println("Commands q(uit) h(elp)");
+			System.out.println("");
+			
+			chessgame.board.printBoard();
+			System.out.println("");
+
+	        System.out.print("Piece: ");
+	        piece = scan.nextLine();
+			System.out.println("");
+			
+	        where = scan.nextLine();
+	        piece = scan.nextLine();
+
+
+	        chess_game.clearTerminal();
+	       
+	        
+		}
+	}
+}

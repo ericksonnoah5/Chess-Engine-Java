@@ -1,0 +1,25 @@
+package chess_game;
+
+import chess_game.square;
+
+public class piece {
+	
+	String visual;
+	
+	
+	
+	public String getVisual() {
+		return visual;
+	}
+	public void setVisual(String visual) {
+		this.visual = visual;
+	}
+}
+
+
+
+
+
+
+
+
