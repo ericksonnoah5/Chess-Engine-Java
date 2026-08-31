@@ -1,0 +1,42 @@
+package chess_game;
+
+import chess_game.square;
+
+public class piece {
+	
+	String visual;
+	
+	boolean white;
+	
+	
+	
+	public String getVisual() {
+		return visual;
+	}
+	public void setVisual(String visual) {
+		this.visual = visual;
+	}
+	
+	public boolean isWhite() {
+		return white;
+	}
+	
+	public void setWhite(boolean bool) {
+		this.white=bool;
+	}
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+

@@ -8,6 +8,8 @@ public class piece {
 	
 	boolean white;
 	
+	
+	
 	public String getVisual() {
 		return visual;
 	}
@@ -22,6 +24,14 @@ public class piece {
 	public void setWhite(boolean bool) {
 		this.white=bool;
 	}
+	
+	
+	
+	
+	
+	
+	
+	
 }
 
 

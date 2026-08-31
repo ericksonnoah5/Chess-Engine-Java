@@ -2,4 +2,3 @@ INDEX VERSION 1.134+/Users/noahhomefolder/Desktop/My Projects/terminal game/.met
 1865797976.index
 376261226.index
 3722078109.index
-3340237515.index

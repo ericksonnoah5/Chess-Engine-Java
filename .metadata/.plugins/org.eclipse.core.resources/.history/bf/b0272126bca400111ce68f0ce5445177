@@ -1,0 +1,12 @@
+package pieces;
+
+import chess_game.*;
+
+public class bishop extends piece{
+	
+	public bishop(boolean bool) {
+		setVisual("[B]");
+		setWhite(bool);
+
+	}
+}

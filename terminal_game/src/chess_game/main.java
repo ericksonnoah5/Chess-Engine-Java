@@ -64,11 +64,17 @@ public class main {
 
 			
 			
-			movepiece(piececoords,wherecoords);
+			
+		
 			
 			
 			
 			
+			
+			
+			
+			
+			movepiece(piececoords,wherecoords,chessgame.board, whitesturn);
 			
 			
 			
@@ -86,13 +92,29 @@ public class main {
 	
 	
 	
-	private static void movepiece(int[] piececoords, int[] wherecoords) {
 
-		piece temp = chessgame.board.squares[piececoords[0]][piececoords[1]].piece;
+
+
+
+
+
+
+
+
+	private static void movepiece(int[] piececoords, int[] wherecoords, board board, boolean whitesturn) {
+
+		piece piece = chessgame.board.squares[piececoords[0]][piececoords[1]].piece;
+		
+		
+//		piece.move(piececoords,wherecoords,board);
+			
+		
+		
+		
 		
 		chessgame.board.squares[piececoords[0]][piececoords[1]].piece=new nopiece();
 		
-		chessgame.board.squares[wherecoords[0]][wherecoords[1]].piece=temp;
+		chessgame.board.squares[wherecoords[0]][wherecoords[1]].piece=piece;
 		
 		
 	}

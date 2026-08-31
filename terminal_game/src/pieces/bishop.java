@@ -1,12 +1,68 @@
 package pieces;
-
+import java.util.*;
 import chess_game.*;
 
 public class bishop extends piece{
+	
+	ArrayList <piece> all = new ArrayList<piece>();
+	private int[] piececoords;
+	private board board;
+	private Object wherecoords;
 	
 	public bishop(boolean bool) {
 		setVisual("[B]");
 		setWhite(bool);
 
 	}
+	
+	public void move(int[] piececoords, int[] wherecoords, board board) {
+		calculateall();
+		this.piececoords = piececoords;
+		this.wherecoords = wherecoords;
+		this.board = board;
+		
+		
+		
+	}
+
+	private void calculateall() {
+		
+		
+		int x = piececoords[0];
+		int y = piececoords[1];
+		
+		
+		while(x>0 && x<8 && y>0 && y<8) {
+			x--;
+			y--;
+			if(board.getSquare(x, y).getPiece().getVisual().equals("[ ]")) {
+				all.add(board.getSquare(x, y).getPiece());
+			}
+		}
+		
+		x = piececoords[0];
+		y = piececoords[1];
+		while(x>0 && x<8 && y>0 && y<8) {
+			x++;
+			y--;
+		}
+		
+		x = piececoords[0];
+		y = piececoords[1];
+		while(x>0 && x<8 && y>0 && y<8) {
+			x--;
+			y++;
+		}
+		
+		x = piececoords[0];
+		y = piececoords[1];
+		while(x>0 && x<8 && y>0 && y<8) {
+			x++;
+			y++;
+		}
+		
+		
+		
+	}
+	
 }
