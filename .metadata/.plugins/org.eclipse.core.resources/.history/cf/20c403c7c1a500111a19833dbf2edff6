@@ -106,7 +106,7 @@ public class main {
 		piece piece = chessgame.board.squares[piececoords[0]][piececoords[1]].piece;
 		
 		
-		piece.move(piececoords,wherecoords,board);
+//		piece.move(piececoords,wherecoords,board);
 			
 		
 		

@@ -21,8 +21,6 @@ public class bishop extends piece{
 		this.wherecoords = wherecoords;
 		this.board = board;
 		
-		
-		
 	}
 
 	private void calculateall() {
@@ -35,16 +33,52 @@ public class bishop extends piece{
 		while(x>0 && x<8 && y>0 && y<8) {
 			x--;
 			y--;
+			
 			if(board.getSquare(x, y).getPiece().getVisual().equals("[ ]")) {
 				all.add(board.getSquare(x, y).getPiece());
 			}
+			else if(board.getSquare(x, y).getPiece().isWhite()==true && this.isWhite()==true) {	
+				break;
+				
+			}
+			else if(board.getSquare(x, y).getPiece().isWhite()==true && this.isWhite()==false) {
+				all.add(board.getSquare(x, y).getPiece());
+				break;
+			}
+			else if(board.getSquare(x, y).getPiece().isWhite()==false && this.isWhite()==true) {
+				all.add(board.getSquare(x, y).getPiece());
+				break;
+			}
+			else if(board.getSquare(x, y).getPiece().isWhite()==false && this.isWhite()==false) {
+				break;
+			}
+			
 		}
+			
 		
 		x = piececoords[0];
 		y = piececoords[1];
 		while(x>0 && x<8 && y>0 && y<8) {
 			x++;
 			y--;
+			if(board.getSquare(x, y).getPiece().getVisual().equals("[ ]")) {
+				all.add(board.getSquare(x, y).getPiece());
+			}
+			else if(board.getSquare(x, y).getPiece().isWhite()==true && this.isWhite()==true) {	
+				break;
+				
+			}
+			else if(board.getSquare(x, y).getPiece().isWhite()==true && this.isWhite()==false) {
+				all.add(board.getSquare(x, y).getPiece());
+				break;
+			}
+			else if(board.getSquare(x, y).getPiece().isWhite()==false && this.isWhite()==true) {
+				all.add(board.getSquare(x, y).getPiece());
+				break;
+			}
+			else if(board.getSquare(x, y).getPiece().isWhite()==false && this.isWhite()==false) {
+				break;
+			}
 		}
 		
 		x = piececoords[0];
@@ -52,6 +86,24 @@ public class bishop extends piece{
 		while(x>0 && x<8 && y>0 && y<8) {
 			x--;
 			y++;
+			if(board.getSquare(x, y).getPiece().getVisual().equals("[ ]")) {
+				all.add(board.getSquare(x, y).getPiece());
+			}
+			else if(board.getSquare(x, y).getPiece().isWhite()==true && this.isWhite()==true) {	
+				break;
+				
+			}
+			else if(board.getSquare(x, y).getPiece().isWhite()==true && this.isWhite()==false) {
+				all.add(board.getSquare(x, y).getPiece());
+				break;
+			}
+			else if(board.getSquare(x, y).getPiece().isWhite()==false && this.isWhite()==true) {
+				all.add(board.getSquare(x, y).getPiece());
+				break;
+			}
+			else if(board.getSquare(x, y).getPiece().isWhite()==false && this.isWhite()==false) {
+				break;
+			}
 		}
 		
 		x = piececoords[0];
@@ -59,6 +111,24 @@ public class bishop extends piece{
 		while(x>0 && x<8 && y>0 && y<8) {
 			x++;
 			y++;
+			if(board.getSquare(x, y).getPiece().getVisual().equals("[ ]")) {
+				all.add(board.getSquare(x, y).getPiece());
+			}
+			else if(board.getSquare(x, y).getPiece().isWhite()==true && this.isWhite()==true) {	
+				break;
+				
+			}
+			else if(board.getSquare(x, y).getPiece().isWhite()==true && this.isWhite()==false) {
+				all.add(board.getSquare(x, y).getPiece());
+				break;
+			}
+			else if(board.getSquare(x, y).getPiece().isWhite()==false && this.isWhite()==true) {
+				all.add(board.getSquare(x, y).getPiece());
+				break;
+			}
+			else if(board.getSquare(x, y).getPiece().isWhite()==false && this.isWhite()==false) {
+				break;
+			}
 		}
 		
 		

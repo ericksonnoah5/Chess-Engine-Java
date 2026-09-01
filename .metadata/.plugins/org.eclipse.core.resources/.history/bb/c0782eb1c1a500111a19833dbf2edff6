@@ -30,6 +30,7 @@ public class piece {
 	
 	public void move(int[] piececoords, int[] wherecoords, board board) {
 		
+		
 	}
 	
 	

@@ -7906,3 +7906,133 @@ Stack Trace
 	at org.eclipse.jface.text.contentassist.AdditionalInfoController$Timer$$Lambda/0x000000002d1dc5b8.run(Unknown Source)
 	at java.base@21.0.9/java.lang.Thread.runWith(Thread.java:1596)
 	at java.base@21.0.9/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-08-30 22:57:51.166
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+!SESSION 2026-08-31 23:38:15.454 -----------------------------------------------
+eclipse.buildId=4.38.0.20251204-0849
+java.version=21.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.committers.product -keyring /Users/noahhomefolder/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.committers.product -keyring /Users/noahhomefolder/.eclipse_keyring
+
+!ENTRY org.eclipse.ui 2 0 2026-08-31 23:38:32.559
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-08-31 23:38:32.559
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2026-08-31 23:38:33.532
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-08-31 23:38:33.532
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.debug.core 4 125 2026-08-31 23:38:51.114
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: Stream closed
+	at java.base/java.io.BufferedInputStream.ensureOpen(BufferedInputStream.java:206)
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:411)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:405)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:95)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.internalRead(OutputStreamMonitor.java:235)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:211)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 2 0 2026-09-01 00:07:21.332
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.ui.monitoring 2 0 2026-09-01 00:09:31.419
+!MESSAGE UI freeze of 0.73s at 00:09:30.309
+!SUBENTRY 1 org.eclipse.ui.monitoring 1 0 2026-09-01 00:09:31.442
+!MESSAGE Sample at 00:09:30.651 (+0.342s)
+Thread 'main' tid=1 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.base@21.0.9/java.util.TimSort.sort(TimSort.java:221)
+	at java.base@21.0.9/java.util.Arrays.sort(Arrays.java:1308)
+	at java.base@21.0.9/java.util.ArrayList.sort(ArrayList.java:1804)
+	at com.github.weisj.jsvg.nodes.AbstractGradient.parseStops(AbstractGradient.java:97)
+	at com.github.weisj.jsvg.nodes.AbstractGradient.build(AbstractGradient.java:87)
+	at com.github.weisj.jsvg.parser.impl.ParsedElement.build(ParsedElement.java:219)
+	at com.github.weisj.jsvg.parser.impl.ParsedElement.build(ParsedElement.java:215)
+	at com.github.weisj.jsvg.parser.impl.ParsedElement.build(ParsedElement.java:215)
+	at com.github.weisj.jsvg.parser.impl.SVGDocumentBuilder.build(SVGDocumentBuilder.java:152)
+	at com.github.weisj.jsvg.parser.impl.StaxSVGLoader.load(StaxSVGLoader.java:152)
+	at com.github.weisj.jsvg.parser.SVGLoader.load(SVGLoader.java:90)
+	at com.github.weisj.jsvg.parser.SVGLoader.load(SVGLoader.java:72)
+	at org.eclipse.swt.svg.JSVGRasterizer.loadAndValidateSVG(JSVGRasterizer.java:90)
+	at org.eclipse.swt.svg.JSVGRasterizer.rasterizeSVG(JSVGRasterizer.java:77)
+	at org.eclipse.swt.internal.image.SVGFileFormat.loadFromByteStream(SVGFileFormat.java:54)
+	at org.eclipse.swt.internal.image.FileFormat.loadFromStream(FileFormat.java:121)
+	at org.eclipse.swt.internal.image.FileFormat.load(FileFormat.java:157)
+	at org.eclipse.swt.internal.NativeImageLoader.load(NativeImageLoader.java:26)
+	at org.eclipse.jface.resource.URLImageDescriptor.loadImageFromStream(URLImageDescriptor.java:151)
+	at org.eclipse.jface.resource.URLImageDescriptor.getImageData(URLImageDescriptor.java:136)
+	at org.eclipse.jface.resource.URLImageDescriptor.getImageData(URLImageDescriptor.java:108)
+	at org.eclipse.jface.resource.CompositeImageDescriptor$CachedDescriptorImageDataProvider.getImageData(CompositeImageDescriptor.java:134)
+	at org.eclipse.jface.resource.CompositeImageDescriptor.getZoomedImageData(CompositeImageDescriptor.java:460)
+	at org.eclipse.jface.resource.CompositeImageDescriptor.drawImage(CompositeImageDescriptor.java:267)
+	at org.eclipse.jdt.ui.JavaElementImageDescriptor.drawCompositeImage(JavaElementImageDescriptor.java:234)
+	at org.eclipse.jface.resource.CompositeImageDescriptor.getImageData(CompositeImageDescriptor.java:376)
+	at org.eclipse.jface.resource.ImageDescriptor$$Lambda/0x000000002a9421e8.getImageData(Unknown Source)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:847)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:382)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:331)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:309)
+	at org.eclipse.jdt.internal.ui.viewsupport.ImageDescriptorRegistry.get(ImageDescriptorRegistry.java:63)
+	at org.eclipse.jdt.internal.ui.text.java.LazyJavaCompletionProposal.computeImage(LazyJavaCompletionProposal.java:364)
+	at org.eclipse.jdt.internal.ui.text.java.LazyJavaCompletionProposal.getImage(LazyJavaCompletionProposal.java:359)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.handleSetData(CompletionProposalPopup.java:921)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$$Lambda/0x000000002b13a410.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4660)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1657)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1680)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1665)
+	at org.eclipse.swt.widgets.Table.checkData(Table.java:285)
+	at org.eclipse.swt.widgets.Table.tableView_objectValueForTableColumn_row(Table.java:3498)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6758)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.drawRect(Widget.java:813)
+	at org.eclipse.swt.widgets.Table.drawRect(Table.java:1231)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6255)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationNextEventMatchingMask(Display.java:5578)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5979)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSApplication.nextEventMatchingMask(NSApplication.java:92)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3997)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1147)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1038)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:677)
+	at org.eclipse.ui.internal.Workbench$$Lambda/0x000000002a4ab000.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base@21.0.9/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder)
+	at java.base@21.0.9/java.lang.invoke.LambdaForm$MH/0x000000002a016800.invoke(LambdaForm$MH)
+	at java.base@21.0.9/java.lang.invoke.LambdaForm$MH/0x000000002a016c00.invokeExact_MT(LambdaForm$MH)
+	at java.base@21.0.9/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:155)
+	at java.base@21.0.9/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base@21.0.9/java.lang.reflect.Method.invoke(Method.java:580)
+	at app//org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:615)
+	at app//org.eclipse.equinox.launcher.Main.basicRun(Main.java:563)
+	at app//org.eclipse.equinox.launcher.Main.run(Main.java:1415)
