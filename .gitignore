@@ -1,0 +1,9 @@
+# Eclipse workspace metadata (IDE state, not source)
+.metadata/
+
+# Compiled output
+bin/
+*.class
+
+# macOS
+.DS_Store

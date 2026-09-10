@@ -1,9 +1,0 @@
-package chess_game;
-
-public class player {
-	
-	public player() {
-		
-	}
-
-}
